@@ -2,12 +2,361 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Website Pertamaku</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Punk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+        <source src="foto/ini 2.mp4" type="video/mp4">
+        Browser Lu Gembel.
+    </video>
+    
+    <!-- Grunge Overlay -->
+    <div class="grunge-overlay"></div>
+    
+    <!-- Sticker Decorations -->
+    <img src="foto/002.png" class="sticker" style="bottom: 50px; right: 10px;transform: scale(1.4);">
+    <img src="foto/001.png" class="sticker" style="bottom: 34px; left: 1px;transform: scale(1.8);">
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">PORTFOLIO<span> Gueh</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#album">ALBUM</a></li>
+                <li><a href="#kontak">KONTAK</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
-    <h1>Halo GitHub 👋</h1>
-    <p>Ini adalah website HTML sederhana.</p>
+    <!-- Home Section -->
+<!-- Home Section -->
+<section id="home" class="section">
+    <div class="container">
+        <h2 class="section-title">HOME</h2>
+        <p class="section-subtitle">Kenalan dulu sebelum lanjut</p>
+        
+        <div class="home-content">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-container">
+                    <div class="profile-frame">
+                        <div class="profile-circle">
+                            <img src="foto/ai.jpg" 
+                                 alt="Foto Profil Abdillah Fathi Arrisqi">
+                        </div>
+                    </div>
+                    
+                    <div class="student-data">
+                        <div class="data-item highlight-item">
+                            <i class="fas fa-id-card"></i>
+                            <div>
+                                <h4>NIM</h4>
+                                <p class="data-value">251011700404</p>
+                            </div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h4>NAMA</h4>
+                                <p class="data-value">ABDILLAH FATHI ARRISQI</p>
+                            </div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <h4>TANGGAL LAHIR</h4>
+                                <p class="data-value">08 Juni 2007</p>
+                            </div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>PROGRAM STUDI</h4>
+                                <p class="data-value">SISTEM INFORMASI S1</p>
+                            </div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>KELAS</h4>
+                                <p class="data-value">01SIFP007</p>
+                            </div>
+                        </div>
+                        
+                        <div class="status-badge">
+                            <i class="fas fa-circle"></i>
+                            <span>MAHASISWA AKTIF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
 
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Album Favorit Section -->
+<section id="album" class="section">
+    <div class="container">
+        <h2 class="section-title">ALBUM FAVORIT</h2>
+        <p class="section-subtitle">Beberapa Album yang gw suka</p>
+        
+        <div class="parts-grid">
+            <!-- Album 1 -->
+            <div class="part-item">
+                <div class="part-thumb">
+                    <img src="foto/1.jpg" alt="THE PANTURAS">
+                </div>
+                <div class="part-text">
+                    <h3 class="part-title">THE PANTURAS</h3>
+                    <div class="part-features">
+                        <p><strong>Genre:</strong> Surf Rock</p>
+                        <p><strong>Asal:</strong> Jatinangor</p>
+                        <p><strong>Anggota:</strong> Abyan Nabilio, Surya Fikri, Bagus Patria, Rizal</p>
+                        <p>Pionir musik selancar Indonesia yang bikin pengen surfing di jalanan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Album 2 -->
+            <div class="part-item">
+                <div class="part-thumb">
+                    <img src="foto/2.jpg" alt="GRRRL GANG">
+                </div>
+                <div class="part-text">
+                    <h3 class="part-title">GRRRL GANG</h3>
+                    <div class="part-features">
+                        <p><strong>Genre:</strong> Pop Ceria</p>
+                        <p><strong>Anggota:</strong> Angeeta Sentana, Edo Alventa, Akbar Rumandung</p>
+                        <p>Musik yang bikin pengen dansa tapi sambil nangis. Vibe-nya seperti baca buku harian remaja.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Album 3 -->
+            <div class="part-item">
+                <div class="part-thumb">
+                    <img src="foto/3.jpg" alt="The S.I.G.I.T.">
+                </div>
+                <div class="part-text">
+                    <h3 class="part-title">The S.I.G.I.T.</h3>
+                    <div class="part-features">
+                        <p><strong>Genre:</strong> Rock Indie</p>
+                        <p><strong>Asal:</strong> Bandung</p>
+                        <p>Band indie rock dengan musikalitas yang baik. Suara gitar yang bikin merinding, Dewa rock-nya anak indie yang kalau manggung.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Album 4 -->
+            <div class="part-item">
+                <div class="part-thumb">
+                    <img src="foto/4.jpg" alt="DONGKER">
+                </div>
+    <div class="part-text">
+        <h3 class="part-title">DONGKER</h3>
+        <div class="part-features">
+            <p><strong>Genre:</strong> Punk Rock, Art Punk</p>
+            <p><strong>Asal:</strong> Bandung</p>
+            <p><strong>Anggota:</strong> Delpi Suhariyanto, Arno, Dzikrie Arethusa</p>
+            <p>Lagu super pendek, ledakan seperti bom molotov yang bikin orang berjas rapi tiba-tiap pengen moshing dan teriak-teriak soal realita hidup. Vibe-nya seperti baru dipecat kerja, tapi malah pengen lari maraton sambil maki-maki trotoar.</p>
+        </div>
+                </div>
+            </div>
+
+            <!-- Album 5 -->
+            <div class="part-item">
+                <div class="part-number">5</div>
+                <div class="part-thumb">
+                    <img src="foto/5.jpg" alt=" THE JANSEN">
+                </div>
+    <div class="part-text">
+        <h3 class="part-title">THE JANSEN</h3>
+        <div class="part-features">
+            <p><strong>Genre:</strong> punk-rock</p>
+            <p><strong>Asal:</strong> Bogor, Jawa Barat</p>
+            <p><strong>Anggota:</strong> Cintarama Bani Satria, Adji Pamungkas, Aduy, Nina Karina</p>
+            <p>Bikin anak muda hobi dengerin punk sambil baca buku sastra.</p>
+        </div>
+                </div>
+            </div>
+
+            <!-- Album 6 -->
+            <div class="part-item">
+                <div class="part-thumb">
+                    <img src="foto/6.jpg" alt="THE ADAMS">
+                </div>
+                <div class="part-text">
+    <div class="part-text">
+        <h3 class="part-title">THE ADAMS</h3>
+        <div class="part-features">
+            <p><strong>Genre:</strong> Indie rock</p>
+            <p><strong>Asal:</strong> Jakarta</p>
+            <p><strong>Anggota:</strong> Ario Hendarwan, Saleh Husein (Ale), Gigih Suryoprayogo, Pandu Fathoni</p>
+            <p>"Dewa Penyelamat" selera musik anak tongkrongan. Tapi Anggotanya Bapak-bapak yang lebih muda dari kita semua.</p>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="section">
+        <div class="container">
+            <h2 class="section-title">KONTAK</h2>
+            <p class="section-subtitle">Anda Sopan Kami Santai</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <p>Boleh Kali Follow, janji difolback deh</p>
+                            <a href="https://www.instagram.com/fth_arzq?igsh=Y2xzdjMya284aHFh" target="_blank" class="instagram-link">
+                                <i class="fab fa-instagram"></i> @fth_arzq
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>Buat Yang pengen ngasih gawe</p>
+                            <a href="mailto:abdillahfathi12@gmail.co" class="email-link">
+                                <i class="fas fa-envelope"></i> abdillahfathi12@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Spotify</h3>
+                            <p>Playlist diriku Ini~</p>
+                            <a href="https://open.spotify.com/playlist/37i9dQZF1E8Msb78Lu2jAj" target="_blank" class="spotify-link">
+                                <i class="fab fa-spotify"></i> berkelana dalam ruang dan mimpi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>KIRIM PESAN</h3>
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama Lu Siapa" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="Instagram" placeholder="Nama IG lu biar gw follow" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Pesan Lu Apa" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">GAS KIRIM</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy;Patih Yang mAha Asik - Jangan Minta File Web nya tai bikin sendiri</p>
+            <p class="footer-note">Dibuat Tanpa Batasan Kreativitas <i class="fas fa-skull-crossbones"></i></p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation active state
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('.section');
+        
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinksContainer = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('active');
+            });
+        });
+        
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Form submission
+        const messageForm = document.getElementById('messageForm');
+        messageForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Pesan lu udah dikirim! Gue bakal balas kalo lagi nggak sibuk.');
+            messageForm.reset();
+        });
+        
+        // Play button functionality
+        const playButtons = document.querySelectorAll('.play-btn');
+        playButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const albumTitle = button.closest('.part-item').querySelector('.part-title').textContent;
+                alert(`Now playing: ${albumTitle} \n\n*ini cuma simulasi ya, lagu benerannya coba dengerin di Spotify*`);
+            });
+        });
+        
+        // Video background error handling
+        const bgVideo = document.getElementById('bg-video');
+        bgVideo.addEventListener('error', () => {
+            console.log('Video background gagal dimuat. Pastikan file foto/ini 2.mp4 ada di folder yang benar.');
+            // Fallback background color
+            document.body.style.background = 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%)';
+        });
+    </script>
 </body>
 </html>
